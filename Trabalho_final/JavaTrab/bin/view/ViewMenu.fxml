@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="511.0" prefWidth="739.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.RegistraUsers">
+   <children>
+      <TableView fx:id="TableView" layoutX="104.0" layoutY="256.0" prefHeight="200.0" prefWidth="368.0">
+        <columns>
+          <TableColumn fx:id="Idcollum" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="UserCollum" prefWidth="94.0" text="NOME ANIMAL" />
+            <TableColumn fx:id="EmailCollum" prefWidth="97.0" text="SEXO ANIMAL" />
+            <TableColumn fx:id="CpfCollum" prefWidth="99.0" text="TIPO ANIMAL" />
+        </columns>
+      </TableView>
+      <Pane fx:id="Painel" layoutX="104.0" layoutY="246.0" prefHeight="209.0" prefWidth="368.0" />
+      <Button fx:id="exitid" layoutX="575.0" layoutY="430.0" mnemonicParsing="false" onAction="#Exit" prefHeight="26.0" prefWidth="73.0" text="Sair" textFill="#060606" />
+      <TextField fx:id="TxtName" layoutX="127.0" layoutY="74.0" prefHeight="25.0" prefWidth="161.0" promptText="Nome" />
+      <TextField fx:id="TxtCpf" layoutX="421.0" layoutY="73.0" prefHeight="25.0" prefWidth="161.0" promptText="sexo" />
+      <TextField fx:id="Txtemail" layoutX="127.0" layoutY="123.0" prefHeight="25.0" prefWidth="161.0" promptText="tipo" />
+      <TextField fx:id="Txtid" layoutX="330.0" layoutY="111.0" prefHeight="25.0" prefWidth="66.0" promptText=" ID" />
+      <Button fx:id="PesquisarId" layoutX="403.0" layoutY="111.0" mnemonicParsing="false" onAction="#findById" prefHeight="25.0" prefWidth="52.0" text="Seach" />
+      <Label layoutX="41.0" layoutY="77.0" prefHeight="18.0" prefWidth="73.0" text="Nome animal" textFill="#29292c" />
+      <Label layoutX="311.0" layoutY="77.0" text="Sexo Animal" />
+      <Label layoutX="48.0" layoutY="127.0" text="Tipo animal" />
+      <Button fx:id="btnIncluir" layoutX="96.0" layoutY="214.0" mnemonicParsing="false" onAction="#incluirCliente" prefHeight="26.0" prefWidth="96.0" style="-fx-background-color: green;" text="Incluir" />
+      <Button fx:id="btnAlterar" layoutX="215.0" layoutY="214.0" mnemonicParsing="false" onAction="#alterarCliente" prefHeight="26.0" prefWidth="96.0" style="-fx-background-color: yellow;" text="Alterar" />
+      <Button fx:id="btnExcluir" layoutX="341.0" layoutY="214.0" mnemonicParsing="false" onAction="#excluirCliente" prefHeight="26.0" prefWidth="96.0" style="-fx-background-color: red;" text="Excluir" textFill="#161616" />
+      <Label layoutX="104.0" layoutY="19.0" text="CADASTRO DE ANIMAIS">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
